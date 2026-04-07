@@ -1,3 +1,8 @@
+---
+import { Toaster } from "@/components/ui/sonner";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -10,6 +15,7 @@
 	</head>
 	<body>
 		<slot />
+		<Toaster richColors position="top-right" />
 	</body>
 </html>
 
