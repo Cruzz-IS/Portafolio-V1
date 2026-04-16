@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -28,21 +28,21 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 animate-gradient">
-            Hola, soy Tu Nombre
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500 animate-gradient">
+            Hola, soy Edwar Rene Cruz
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-slate-300 mb-8 font-light">
             Ingeniero en Sistemas
           </h2>
           <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Desarrollador Full Stack especializado en arquitecturas escalables y modernas.
+            Analista de Datos, Desarrollador Full Stack especializado en arquitecturas escalables y modernas.
             Graduado de la UNAH con experiencia en FastAPI, Rust, Next.js, y más.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="#projects"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
+              className="group px-8 py-4 bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
             >
               Ver Proyectos
               <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>

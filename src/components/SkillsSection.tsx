@@ -43,7 +43,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-24 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Habilidades Técnicas
         </h2>
         <p className="text-center text-slate-400 mb-16 text-lg">
@@ -54,7 +54,7 @@ export default function SkillsSection() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group p-6 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300"
+              className="group p-6 rounded-xl bg-linear-to-br from-slate-900 to-slate-800 border border-slate-700 hover:border-slate-600 transition-all duration-300"
               style={{
                 animation: isVisible ? `slideIn 0.5s ease-out ${index * 0.05}s both` : 'none',
               }}
@@ -71,7 +71,7 @@ export default function SkillsSection() {
 
               <div className="relative h-3 bg-slate-700 rounded-full overflow-hidden">
                 <div
-                  className={`absolute top-0 left-0 h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
+                  className={`absolute top-0 left-0 h-full bg-linear-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
                   style={{
                     width: isVisible ? `${skill.level}%` : '0%',
                   }}
