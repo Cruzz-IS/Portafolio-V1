@@ -46,7 +46,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24 bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Proyectos Destacados
         </h2>
         <p className="text-center text-slate-400 mb-16 text-lg">
@@ -60,9 +60,9 @@ export default function ProjectsSection() {
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {projects.map((project, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-4">
-                  <div className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-slate-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+                <div key={index} className="w-full shrink-0 px-4">
+                  <div className="group relative rounded-2xl overflow-hidden bg-linear-to-r from-slate-800 to-slate-900 border border-slate-700 hover:border-slate-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                    <div className={`absolute inset-0 bg-linear-to-r ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
 
                     <div className="p-8 md:p-12">
                       <div className="flex items-start justify-between mb-6">
@@ -79,7 +79,7 @@ export default function ProjectsSection() {
                         </div>
                       </div>
 
-                      <h3 className={`text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r ${project.gradient}`}>
+                      <h3 className={`text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r ${project.gradient}`}>
                         {project.title}
                       </h3>
 
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
                       </div>
                     </div>
 
-                    <div className="h-1 bg-gradient-to-r from-transparent via-slate-600 to-transparent group-hover:via-blue-500 transition-all duration-500" />
+                    <div className="h-1 bg-linear-to-r from-transparent via-slate-600 to-transparent group-hover:via-blue-500 transition-all duration-500" />
                   </div>
                 </div>
               ))}

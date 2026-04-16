@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-24 bg-slate-950">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Sobre Mí
         </h2>
 
@@ -25,7 +25,7 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="group p-6 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                   <GraduationCap className="w-6 h-6 text-blue-400" />
@@ -38,7 +38,7 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="group p-6 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-cyan-500/10 group-hover:bg-cyan-500/20 transition-colors">
                   <Code className="w-6 h-6 text-cyan-400" />
@@ -51,7 +51,7 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="group p-6 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-green-500/10 group-hover:bg-green-500/20 transition-colors">
                   <Briefcase className="w-6 h-6 text-green-400" />
