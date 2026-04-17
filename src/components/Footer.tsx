@@ -11,11 +11,11 @@ export default function Footer() {
             © {currentYear} Tu Nombre. Todos los derechos reservados.
           </p>
 
-          <div className="flex items-center gap-2 text-slate-400">
+          {/* <div className="flex items-center gap-2 text-slate-400">
             <span>Hecho con</span>
             <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
             <span>usando Astro + React</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800">

@@ -2,14 +2,14 @@ import { Mail, MapPin } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 bg-slate-900">
+    <section id="contact" className="py-24 bg-slate-900 animate-scroll-fade-up">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400 pb-12">
           Contacto
         </h2>
-        <p className="text-center text-slate-400 mb-16 text-lg">
+        {/* <p className="text-center text-slate-400 mb-16 text-lg">
           ¿Tienes un proyecto en mente? ¡Hablemos!
-        </p>
+        </p> */}
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <a
@@ -22,7 +22,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">Email</h3>
-                <p className="text-slate-400">tu-email@ejemplo.com</p>
+                <p className="text-slate-400">edwarcruz2000@gmail.com</p>
               </div>
             </div>
           </a>
