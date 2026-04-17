@@ -56,7 +56,7 @@ export default function ProjectsSection() {
         <div className="relative">
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-500 ease-out"
+              className="flex transition-transform duration-500 ease-out cursor-pointer"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {projects.map((project, index) => (
@@ -108,14 +108,14 @@ export default function ProjectsSection() {
 
           <button
             onClick={prevProject}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition-all duration-300 shadow-xl"
+            className="cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition-all duration-300 shadow-xl"
           >
             <ChevronLeft className="w-6 h-6 text-slate-300" />
           </button>
 
           <button
             onClick={nextProject}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition-all duration-300 shadow-xl"
+            className="cursor-pointer absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-blue-500 hover:bg-slate-700 transition-all duration-300 shadow-xl"
           >
             <ChevronRight className="w-6 h-6 text-slate-300" />
           </button>

@@ -13,7 +13,7 @@ export default function ContactSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <a
-            href="mailto:tu-email@ejemplo.com"
+            href="mailto:edwarcruz2000@gmail.com"
             className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center gap-4">
@@ -28,7 +28,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="https://linkedin.com/in/tu-perfil"
+            href="https://linkedin.com/in/edwarrcruz"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
@@ -47,7 +47,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="https://github.com/tu-usuario"
+            href="https://github.com/Cruzz-IS"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
@@ -65,7 +65,7 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <div className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
+          <div className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <MapPin className="w-8 h-8 text-blue-400" />
