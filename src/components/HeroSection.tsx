@@ -36,7 +36,7 @@ export default function HeroSection() {
           </h2>
           <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
             Analista de Datos, Desarrollador Full Stack especializado en arquitecturas escalables y modernas.
-            Graduado de la UNAH con experiencia en FastAPI, Rust, Next.js, y más.
+            Graduado de la UNAH con experiencia en Desarrollo Full Stack, Redes de datos, Bases de Datos, Infraestructura y DevOps.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">

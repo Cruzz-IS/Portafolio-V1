@@ -2,7 +2,7 @@ import { GraduationCap, Code, Briefcase } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-slate-950 animate-scroll">
+    <section id="about" className="py-24 bg-slate-950 animate-scroll-fade-up">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Sobre Mí
@@ -16,7 +16,7 @@ export default function AboutSection() {
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
               Mi experiencia abarca desde el desarrollo de plataformas educativas hasta sistemas de gestión empresarial,
-              utilizando tecnologías modernas como Rust, Python, TypeScript y frameworks de última generación.
+              utilizando tecnologías modernas como Rust, Python, TypeScript, C# y frameworks de última generación.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
               Me especializo en arquitecturas backend robustas y frontends dinámicos, siempre buscando
