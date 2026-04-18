@@ -1,23 +1,27 @@
 ---
-import HeroSection from '@/components/HeroSection';
-import Layout from '../layouts/Layout.astro';
-import AboutSection from '@/components/AboutSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import SkillsSection from '@/components/SkillsSection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
-import HobbiesSection from '@/components/HobbiesSection';
+import HeroSection from "@/components/HeroSection";
+import Layout from "../layouts/Layout.astro";
+import AboutSection from "@/components/AboutSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import SkillsSection from "@/components/SkillsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import HobbiesSection from "@/components/HobbiesSection";
+import TimelineDemo from "@/components/timeline-demo";
+import ExperienceSection from "@/components/ExperienceSection";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Portafolio - Ingeniero en Sistemas">
-	<HeroSection client:load />
-	<AboutSection client:visible />
-	<ProjectsSection client:visible />
-	<SkillsSection client:visible />
-	<HobbiesSection client:visible />
-	<ContactSection client:visible />
-	<Footer client:visible />
+  <HeroSection client:load />
+  <AboutSection client:visible />
+  <ProjectsSection client:visible />
+  <SkillsSection client:visible />
+  <ExperienceSection client:visible />
+  <HobbiesSection client:visible />
+  <!-- <TimelineDemo client:visible /> -->
+  <ContactSection client:visible />
+  <Footer client:visible />
 </Layout>
