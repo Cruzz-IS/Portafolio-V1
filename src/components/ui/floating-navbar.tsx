@@ -7,6 +7,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../ModeToggle";
 
 export const FloatingNav = ({
   navItems,
@@ -26,7 +27,7 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       const direction = current - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.000005) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -53,7 +54,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto z-5000 items-center justify-center",
+          "flex max-w-fit fixed top-2 inset-x-0 mx-auto z-[5000] items-center justify-center",
           className
         )}
       >
@@ -74,13 +75,14 @@ export const FloatingNav = ({
             ))}
           </div>
 
-          {/* Divider */}
           <div className="h-5 w-px bg-neutral-200 dark:bg-white/10" />
 
-          {/* CTA Button */}
-          <button className="relative rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-neutral-800 hover:shadow-lg hover:shadow-neutral-900/20 dark:bg-white dark:text-black dark:hover:bg-neutral-100 dark:hover:shadow-white/20">
+          {/* <button className="relative rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-neutral-800 hover:shadow-lg hover:shadow-neutral-900/20 dark:bg-white dark:text-black dark:hover:bg-neutral-100 dark:hover:shadow-white/20">
             <span>Login</span>
-          </button>
+          </button> */}
+          <div className="hover:cursor-pointer">
+          <ModeToggle />
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>
