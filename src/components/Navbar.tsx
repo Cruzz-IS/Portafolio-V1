@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-export default function FloatingNavDemo() {
+export default function FloatingNavbar() {
   const navItems = [
     {
       name: "Home",
@@ -31,7 +30,7 @@ export default function FloatingNavDemo() {
 }
 const DummyContent = () => {
   return (
-    <div className="relative grid h-[40rem] w-full grid-cols-1 rounded-md border border-neutral-200 bg-white dark:border-white/[0.2] dark:bg-black">
+    <div className="relative grid h-40rem w-full grid-cols-1 rounded-md border border-neutral-200 bg-white dark:border-white/20 dark:bg-black">
       <p className="mt-40 text-center text-4xl font-bold text-neutral-600 dark:text-white">
         Scroll back up to reveal Navbar
       </p>
