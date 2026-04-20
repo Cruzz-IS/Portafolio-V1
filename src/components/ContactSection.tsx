@@ -1,3 +1,4 @@
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import { Mail, MapPin } from "lucide-react";
 
 export default function ContactSection() {
@@ -35,7 +36,7 @@ export default function ContactSection() {
           >
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                {/* <Linkedin className="w-8 h-8 text-blue-400" /> */}
+                <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">
@@ -54,7 +55,7 @@ export default function ContactSection() {
           >
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                {/* <Github className="w-8 h-8 text-blue-400" /> */}
+                <IconBrandGithub className="w-8 h-8 text-blue-400" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-1">
@@ -80,14 +81,14 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <a
             href="mailto:tu-email@ejemplo.com"
             className="inline-block px-8 py-4 bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
           >
             Envíame un mensaje
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -7,9 +7,9 @@ export default function ExperienceSection() {
       title: "Feb 2025 - Jul 2025",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
-          </p>
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+            Sercom de Honduras
+          </h1>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/templates/startup-1.webp"
@@ -47,9 +47,9 @@ export default function ExperienceSection() {
       title: "Ene 2021 - Dic 2024",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Sercom de Honduras
-          </p>
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+            Aprotec
+          </h1>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             Lorem ipsum is for people who are too lazy to write copy. But we are
             not. Here are some more example of beautiful designs I built.
@@ -91,9 +91,9 @@ export default function ExperienceSection() {
       title: "Jul 2019 - May 2020",
       content: (
         <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
-          </p>
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+            OPS Contact Center
+          </h1>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               ✅ Card grid component
