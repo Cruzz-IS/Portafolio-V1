@@ -20,7 +20,7 @@ export default function HobbiesSection() {
   }, []);
 
   const textColor = isDark ? "#ffffff" : "#000000";
-  const bgColor = isDark ? "#0a0a0a" : "#ffffff"; 
+  const bgColor = isDark ? "#020618" : "#ffffff"; 
 
   return (
     <section

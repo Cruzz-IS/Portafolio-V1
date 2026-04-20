@@ -3,7 +3,7 @@ import { Mail, MapPin } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 bg-slate-900 animate-scroll-fade-up">
+    <section id="contact" className="py-24 themeTwo animate-scroll-fade-up">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400 pb-12">
           Contacto

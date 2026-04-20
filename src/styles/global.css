@@ -150,3 +150,13 @@
     @apply font-sans;
     }
 }
+
+@layer utilities {
+  .themeOne {
+    @apply bg-white dark:bg-slate-950;
+  }
+
+  .themeTwo {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
+}

@@ -795,7 +795,7 @@ export default function CircularGallery({
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
   return (
     <div
-      className="circular-gallery bg-white dark:bg-neutral-950"
+      className="circular-gallery bg-white dark:bg-slate-950"
       ref={containerRef}
     />
   );

@@ -2,7 +2,7 @@ import { GraduationCap, Code, Briefcase } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-slate-950 animate-scroll-fade-up">
+    <section id="about" className="py-24 themeOne animate-scroll-fade-up">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Sobre Mí
