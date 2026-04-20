@@ -396,11 +396,30 @@ class Media {
         ];
       }
     }
+
+    const screenW = this.screen.width;
+    let planeHeight: number;
+    let planeWidth: number;
+
+    if (screenW < 480) {
+      planeHeight = 400;
+      planeWidth = 380;
+    } else if (screenW < 768) {
+      planeHeight = 520;
+      planeWidth = 460;
+    } else if (screenW < 1024) {
+      planeHeight = 600;
+      planeWidth = 500;
+    } else {
+      planeHeight = 900;
+      planeWidth = 700;
+    }
+
     this.scale = this.screen.height / 1500;
     this.plane.scale.y =
-      (this.viewport.height * (900 * this.scale)) / this.screen.height;
+      (this.viewport.height * (planeHeight * this.scale)) / this.screen.height;
     this.plane.scale.x =
-      (this.viewport.width * (700 * this.scale)) / this.screen.width;
+      (this.viewport.width * (planeWidth * this.scale)) / this.screen.width;
     this.plane.program.uniforms.uPlaneSizes.value = [
       this.plane.scale.x,
       this.plane.scale.y,
@@ -409,7 +428,38 @@ class Media {
     this.width = this.plane.scale.x + this.padding;
     this.widthTotal = this.width * this.length;
     this.x = this.width * this.index;
+
+    this.extra = 0;
   }
+
+  // onResize({
+  //   screen,
+  //   viewport,
+  // }: { screen?: ScreenSize; viewport?: Viewport } = {}) {
+  //   if (screen) this.screen = screen;
+  //   if (viewport) {
+  //     this.viewport = viewport;
+  //     if (this.plane.program.uniforms.uViewportSizes) {
+  //       this.plane.program.uniforms.uViewportSizes.value = [
+  //         this.viewport.width,
+  //         this.viewport.height,
+  //       ];
+  //     }
+  //   }
+  //   this.scale = this.screen.height / 1500;
+  //   this.plane.scale.y =
+  //     (this.viewport.height * (800 * this.scale)) / this.screen.height;
+  //   this.plane.scale.x =
+  //     (this.viewport.width * (600 * this.scale)) / this.screen.width;
+  //   this.plane.program.uniforms.uPlaneSizes.value = [
+  //     this.plane.scale.x,
+  //     this.plane.scale.y,
+  //   ];
+  //   this.padding = 2;
+  //   this.width = this.plane.scale.x + this.padding;
+  //   this.widthTotal = this.width * this.length;
+  //   this.x = this.width * this.index;
+  // }
 }
 
 interface AppConfig {
@@ -638,6 +688,11 @@ class App {
     const height = 2 * Math.tan(fov / 2) * this.camera.position.z;
     const width = height * this.camera.aspect;
     this.viewport = { width, height };
+
+    this.scroll.current = 0;
+    this.scroll.target = 0;
+    this.scroll.last = 0;
+
     if (this.medias) {
       this.medias.forEach((media) =>
         media.onResize({ screen: this.screen, viewport: this.viewport }),
