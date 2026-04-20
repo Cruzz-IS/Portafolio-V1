@@ -153,10 +153,22 @@
 
 @layer utilities {
   .themeOne {
-    @apply bg-white dark:bg-slate-950;
+    @apply bg-slate-100 dark:bg-slate-950;
   }
 
   .themeTwo {
-    @apply bg-slate-100 dark:bg-slate-900;
+    @apply bg-slate-50 dark:bg-slate-900;
+  }
+
+  .themeThree {
+    @apply dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 from-slate-50 via-slate-100 to-slate-50;
+  }
+
+  .textOne {
+    @apply dark:text-slate-50 text-slate-950 font-medium;
+  }
+
+  .textTwo {
+    @apply dark:text-slate-200 text-slate-800 font-light;
   }
 }

@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br themeThree">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -31,10 +31,11 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500 animate-gradient">
             Hola, soy Edwar Rene Cruz
           </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-slate-300 mb-8 font-light">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl textOne mb-8 font-light">
             Ingeniero en Sistemas
           </h2>
-          <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+          {/* <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed"> */}
+          <p className="text-lg md:text-xl textTwo max-w-3xl mx-auto mb-12 leading-relaxed">
             Analista de Datos, Desarrollador Full Stack especializado en arquitecturas escalables y modernas.
             Graduado de la UNAH con experiencia en Desarrollo Full Stack, Redes de datos, Bases de Datos, Infraestructura y DevOps.
           </p>
@@ -49,7 +50,7 @@ export default function HeroSection() {
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 border-2 border-slate-600 text-slate-300 rounded-lg font-semibold hover:border-blue-500 hover:text-blue-400 transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 border-2 border-slate-600 textOne rounded-lg font-semibold hover:border-blue-500 hover:text-blue-400 transition-all duration-300 hover:scale-105"
             >
               Contacto
             </a>

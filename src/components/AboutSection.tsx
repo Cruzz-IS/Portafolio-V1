@@ -10,15 +10,15 @@ export default function AboutSection() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg textTwo leading-relaxed">
               Soy un Ingeniero en Sistemas graduado de la Universidad Nacional Autónoma de Honduras (UNAH),
               apasionado por crear soluciones tecnológicas innovadoras y escalables.
             </p>
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg textTwo leading-relaxed">
               Mi experiencia abarca desde el desarrollo de plataformas educativas hasta sistemas de gestión empresarial,
               utilizando tecnologías modernas como Rust, Python, TypeScript, C# y frameworks de última generación.
             </p>
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg textTwo leading-relaxed">
               Me especializo en arquitecturas backend robustas y frontends dinámicos, siempre buscando
               las mejores prácticas y patrones de diseño para entregar productos de alta calidad.
             </p>
