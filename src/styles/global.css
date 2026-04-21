@@ -169,7 +169,7 @@
   }
 
   .textTwo {
-    @apply dark:text-slate-200 text-slate-800 font-light;
+    @apply dark:text-slate-200 text-slate-800 font-medium;
   }
 
   .textThree {
@@ -181,7 +181,7 @@
   }
 
   .textParTwo {
-    @apply dark:text-slate-500 text-slate-400 text-sm;
+    @apply dark:text-slate-500 text-slate-400;
   }
 
   .cardBg {

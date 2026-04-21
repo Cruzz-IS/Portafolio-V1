@@ -22,7 +22,7 @@ export default function ContactSection() {
                 <Mail className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">Email</h3>
+                <h3 className="textThree mb-1">Email</h3>
                 <p className="text-slate-400">edwarcruz2000@gmail.com</p>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function ContactSection() {
                 <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">
+                <h3 className="textThree mb-1">
                   LinkedIn
                 </h3>
                 <p className="text-slate-400">Conecta conmigo</p>
@@ -58,7 +58,7 @@ export default function ContactSection() {
                 <IconBrandGithub className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">
+                <h3 className="textThree mb-1">
                   GitHub
                 </h3>
                 <p className="text-slate-400">Ve mis proyectos</p>
@@ -72,7 +72,7 @@ export default function ContactSection() {
                 <MapPin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">
+                <h3 className="textThree mb-1">
                   Ubicación
                 </h3>
                 <p className="text-slate-400">Tegucigalpa, Honduras</p>

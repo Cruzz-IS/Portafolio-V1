@@ -25,11 +25,11 @@ export default function HobbiesSection() {
   return (
     <section
       id="hobbies"
-      className="py-24 animate-scroll-fade-up"
+      className="pt-14 animate-scroll-fade-up"
       style={{ backgroundColor: bgColor }}
     >
       <div className="mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-2 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Hobbies
         </h2>
 
