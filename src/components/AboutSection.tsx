@@ -25,41 +25,41 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r cardBg hover:border-blue-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                   <GraduationCap className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Educación</h3>
-                  <p className="text-slate-400">Ingeniería en Sistemas</p>
-                  <p className="text-slate-500 text-sm">Universidad Nacional Autónoma de Honduras (UNAH)</p>
+                  <h3 className="textThree mb-2">Educación</h3>
+                  <p className="textParOne">Ingeniería en Sistemas</p>
+                  <p className="textParTwo">Universidad Nacional Autónoma de Honduras (UNAH)</p>
                 </div>
               </div>
             </div>
 
-            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r cardBg hover:border-cyan-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-cyan-500/10 group-hover:bg-cyan-500/20 transition-colors">
                   <Code className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Especialización</h3>
-                  <p className="text-slate-400">Desarrollo Full Stack</p>
-                  <p className="text-slate-500 text-sm">Backend, Frontend & Arquitectura de Software</p>
+                  <h3 className="textThree mb-2">Especialización</h3>
+                  <p className="textParOne">Desarrollo Full Stack</p>
+                  <p className="textParTwo">Backend, Frontend & Arquitectura de Software</p>
                 </div>
               </div>
             </div>
 
-            <div className="group p-6 rounded-xl bg-linear-to-r from-slate-900 to-slate-800 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:scale-105">
+            <div className="group p-6 rounded-xl bg-linear-to-r cardBg hover:border-green-500 transition-all duration-300 hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-green-500/10 group-hover:bg-green-500/20 transition-colors">
                   <Briefcase className="w-6 h-6 text-green-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Experiencia</h3>
-                  <p className="text-slate-400">Proyectos Enterprise</p>
-                  <p className="text-slate-500 text-sm">Plataformas educativas, gestión empresarial y e-commerce</p>
+                  <h3 className="textThree mb-2">Experiencia</h3>
+                  <p className="textParOne">Proyectos Enterprise</p>
+                  <p className="textParTwo">Plataformas educativas, gestión empresarial y e-commerce</p>
                 </div>
               </div>
             </div>

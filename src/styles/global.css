@@ -171,4 +171,20 @@
   .textTwo {
     @apply dark:text-slate-200 text-slate-800 font-light;
   }
+
+  .textThree {
+    @apply dark:text-slate-100 text-slate-900 text-xl font-semibold;
+  }
+
+  .textParOne {
+    @apply dark:text-slate-400 text-slate-500 text-xl font-semibold;
+  }
+
+  .textParTwo {
+    @apply dark:text-slate-500 text-slate-400 text-sm;
+  }
+
+  .cardBg {
+    @apply from-slate-200 to-slate-100 border border-slate-300 dark:from-slate-900 dark:to-slate-800  dark:border-slate-700;
+  }
 }

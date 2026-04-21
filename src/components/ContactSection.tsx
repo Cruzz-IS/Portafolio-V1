@@ -15,7 +15,7 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <a
             href="mailto:edwarcruz2000@gmail.com"
-            className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+            className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
@@ -32,7 +32,7 @@ export default function ContactSection() {
             href="https://linkedin.com/in/edwarrcruz"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+            className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
@@ -51,7 +51,7 @@ export default function ContactSection() {
             href="https://github.com/Cruzz-IS"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+            className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
@@ -66,7 +66,7 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <div className="group p-8 rounded-xl bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
+          <div className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
             <div className="flex items-center gap-4">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <MapPin className="w-8 h-8 text-blue-400" />
