@@ -2,33 +2,48 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { WorkflowIcon } from "lucide-react";
-export default function FloatingNavbar() {
+import { useTranslations } from "@/i18n/utils";
+import type { Lang } from "@/i18n/utils";
+
+interface Props {
+  lang?: Lang;
+  currentPath?: string;
+}
+
+export default function FloatingNavbar({
+  lang = "es",
+  currentPath = "/",
+}: Props) {
+  const t = useTranslations(lang);
+
   const navItems = [
     {
-      name: "Inicio",
+      name: t("nav.about"),
       link: "/",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Sobre mí",
+      name: t("nav.about"),
       link: "#about",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contacto",
+      name: t("nav.contact"),
       link: "#contact",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
-        {
-      name: "Experiencia",
+    {
+      name: t("nav.experience"),
       link: "#about",
-      icon: <WorkflowIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: (
+        <WorkflowIcon className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
     },
   ];
   return (
-    <FloatingNav navItems={navItems} />
+    <FloatingNav navItems={navItems} lang={lang} currentPath={currentPath} />
     // <div className="relative w-full translate-z-0">
     //   <FloatingNav navItems={navItems} />
     //   <DummyContent />
