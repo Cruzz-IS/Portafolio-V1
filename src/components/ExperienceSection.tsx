@@ -3,7 +3,7 @@ import { Timeline } from "./ui/timeline";
 export default function ExperienceSection() {
   const data = [
     {
-      title: "Feb 2025 - Jul 2025",
+      title: "Febrero 2025 - Julio 2025",
       content: (
         <div>
           <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
@@ -65,7 +65,7 @@ export default function ExperienceSection() {
       ),
     },
     {
-      title: "Ene 2021 - Dic 2024",
+      title: "Enero 2021 - Diciembre 2024",
       content: (
         <div>
           <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
@@ -130,7 +130,7 @@ export default function ExperienceSection() {
       ),
     },
     {
-      title: "Jul 2019 - May 2020",
+      title: "Julio 2019 - Mayo 2020",
       content: (
         <div>
           <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
