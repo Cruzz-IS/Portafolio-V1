@@ -8,10 +8,13 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "../ModeToggle";
+import LangToggle from "../LangToggle";
 
 export const FloatingNav = ({
   navItems,
   className,
+  lang,
+  currentPath,
 }: {
   navItems: {
     name: string;
@@ -19,6 +22,8 @@ export const FloatingNav = ({
     icon?: React.ReactNode;
   }[];
   className?: string;
+  lang?: string;
+  currentPath?: string;
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
@@ -82,6 +87,7 @@ export const FloatingNav = ({
           </button> */}
           <div className="hover:cursor-pointer">
           <ModeToggle />
+          <LangToggle lang={(lang as "es" | "en") || "es"} currentPath={currentPath as string} />
           </div>
         </div>
       </motion.div>

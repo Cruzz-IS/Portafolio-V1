@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useTranslations } from '../i18n/utils';
 
-export default function HeroSection() {
+interface Props {
+  lang?: 'es' | 'en';
+}
+
+export default function HeroSection({ lang = 'es' }: Props) {
+  const t = useTranslations(lang);
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -29,10 +36,10 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500 animate-gradient">
-            Hola, soy Edwar Rene Cruz
+            {t('hero.greeting')} Edwar Rene Cruz
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl textOne mb-8 font-light">
-            Ingeniero en Sistemas
+            {t('hero.role')}
           </h2>
           {/* <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed"> */}
           <p className="text-lg md:text-xl textTwo max-w-3xl mx-auto mb-12 leading-relaxed">

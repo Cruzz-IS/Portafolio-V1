@@ -17,7 +17,7 @@ export const ui = {
 
     // Hero
     'hero.greeting':  'Hola, soy',
-    'hero.role':      'Desarrollador Full Stack',
+    'hero.role':      'Ingeniero en Sistemas',
     'hero.cta':       'Ver proyectos',
 
     // About
@@ -58,7 +58,7 @@ export const ui = {
     'nav.contact':    'Contact',
 
     'hero.greeting':  "Hi, I'm",
-    'hero.role':      'Full Stack Developer',
+    'hero.role':      'Systems Engineer',
     'hero.cta':       'View projects',
 
     'about.title':    'About me',
