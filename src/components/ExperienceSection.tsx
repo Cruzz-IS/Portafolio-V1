@@ -6,10 +6,10 @@ export default function ExperienceSection() {
       title: "Feb 2025 - Jul 2025",
       content: (
         <div>
-          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
             Sercom de Honduras
           </h1>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 textParTwo">
             <div>
               <p>
                 ● Desarrollé e implementé procesos ETL utilizando Talend Open
@@ -32,7 +32,7 @@ export default function ExperienceSection() {
             </div>
           </div>
         </div>
-        // <div className="grid grid-cols-2 gap-4">
+        // <div className="grid grid-cols-2 gap-4 textParTwo">
         //   <img
         //     src="https://assets.aceternity.com/templates/startup-1.webp"
         //     alt="startup template"
@@ -68,10 +68,10 @@ export default function ExperienceSection() {
       title: "Ene 2021 - Dic 2024",
       content: (
         <div>
-          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
             APROTEC
           </h1>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 textParTwo">
             <div>
               <p>
                 ● Instalé y operé equipos de audio, iluminación DMX (MyDmx y
@@ -89,14 +89,14 @@ export default function ExperienceSection() {
           </div>
         </div>
         // <div>
-        //   <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+        //   <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
         //     Aprotec
         //   </h1>
         //   <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
         //     Lorem ipsum is for people who are too lazy to write copy. But we are
         //     not. Here are some more example of beautiful designs I built.
         //   </p>
-        //   <div className="grid grid-cols-2 gap-4">
+        //   <div className="grid grid-cols-2 gap-4 textParTwo">
         //     <img
         //       src="https://assets.aceternity.com/pro/hero-sections.png"
         //       alt="hero template"
@@ -133,10 +133,10 @@ export default function ExperienceSection() {
       title: "Jul 2019 - May 2020",
       content: (
         <div>
-          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+          <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
             OPS Contact Center
           </h1>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 textParTwo">
             <div>
               <p>
                 ● Gestioné cobros de más de 30 cuentas mensuales de planes
@@ -154,7 +154,7 @@ export default function ExperienceSection() {
           </div>
         </div>
         // <div>
-        //   <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold text-neutral-800 dark:text-neutral-200">
+        //   <h1 className="mb-8 sm:text-md md:text-2xl lg:text-3xl font-bold textTwo">
         //     OPS Contact Center
         //   </h1>
         //   <div className="mb-8">
@@ -174,7 +174,7 @@ export default function ExperienceSection() {
         //       ✅ Salman Bhai Fan Club registrations open
         //     </div>
         //   </div>
-        //   <div className="grid grid-cols-2 gap-4">
+        //   <div className="grid grid-cols-2 gap-4 textParTwo">
         //     <img
         //       src="https://assets.aceternity.com/pro/hero-sections.png"
         //       alt="hero template"
