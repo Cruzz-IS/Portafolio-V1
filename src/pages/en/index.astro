@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -9,14 +9,14 @@ import Footer from "@/components/Footer";
 import HobbiesSection from "@/components/HobbiesSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import FloatingNavbar from "@/components/Navbar";
-import { useTranslations } from '../i18n/utils';
+import { useTranslations } from '@/i18n/utils';
 
-const t = useTranslations('es');
+const t = useTranslations('en');
 ---
 
 <Layout title="Portafolio - Edwar Cruz">
   <FloatingNavbar client:idle />
-  <HeroSection lang="es"client:load />
+  <HeroSection lang="en" client:load />
   <AboutSection client:visible />
   <ProjectsSection client:visible />
   <SkillsSection client:visible />
