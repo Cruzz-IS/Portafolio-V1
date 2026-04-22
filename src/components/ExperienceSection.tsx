@@ -209,8 +209,8 @@ export default function ExperienceSection() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <section id="experience" className="relative w-full overflow-clip">
       <Timeline data={data} />
-    </div>
+    </section>
   );
 }

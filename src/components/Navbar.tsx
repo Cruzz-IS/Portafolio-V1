@@ -18,7 +18,7 @@ export default function FloatingNavbar({
 
   const navItems = [
     {
-      name: t("nav.about"),
+      name: t("nav.home"),
       link: "/",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
@@ -36,7 +36,7 @@ export default function FloatingNavbar({
     },
     {
       name: t("nav.experience"),
-      link: "#about",
+      link: "#experience",
       icon: (
         <WorkflowIcon className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
