@@ -10,13 +10,16 @@ import HobbiesSection from "@/components/HobbiesSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import FloatingNavbar from "@/components/Navbar";
 import { useTranslations } from '../i18n/utils';
+import { Home } from "lucide-react";
+import HomeSection from "@/components/HomeSection";
 
 const t = useTranslations('es');
 ---
 
 <Layout title="Portafolio - Edwar Cruz">
   <FloatingNavbar lang="es" currentPath="/" client:idle />
-  <HeroSection lang="es"client:load />
+  <!-- <HeroSection lang="es"client:load /> -->
+  <HomeSection lang="es" client:load />
   <AboutSection client:visible />
   <ProjectsSection client:visible />
   <SkillsSection client:visible />

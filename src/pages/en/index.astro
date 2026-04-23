@@ -10,13 +10,15 @@ import HobbiesSection from "@/components/HobbiesSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import FloatingNavbar from "@/components/Navbar";
 import { useTranslations } from '@/i18n/utils';
+import HomeSection from "@/components/HomeSection";
 
 const t = useTranslations('en');
 ---
 
 <Layout title="Portafolio - Edwar Cruz">
   <FloatingNavbar lang="en" currentPath="/en" client:idle />
-  <HeroSection lang="en" client:load />
+  <!-- <HeroSection lang="en" client:load /> -->
+  <HomeSection lang="en" client:load />
   <AboutSection client:visible />
   <ProjectsSection client:visible />
   <SkillsSection client:visible />
