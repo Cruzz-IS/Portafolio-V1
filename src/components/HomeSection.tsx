@@ -437,7 +437,7 @@ export default function HomeSection({ lang = 'es' }: Props) {
             </div>
           </div>
 
-          {/* ════ DERECHA — Foto + Terminal ════ */}
+          {/* ════ Foto + Terminal ════ */}
           <div
             className="flex flex-col gap-6 items-center lg:items-end"
             style={{

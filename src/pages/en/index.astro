@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import SkillsSection from "@/components/SkillsSectionOne";
+import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import HobbiesSection from "@/components/HobbiesSection";
@@ -21,7 +21,7 @@ const t = useTranslations('en');
   <HomeSection lang="en" client:load />
   <AboutSection client:visible />
   <ProjectsSection client:visible />
-  <SkillsSection client:visible />
+  <SkillsSection lang="en" client:visible />
   <ExperienceSection client:visible />
   <HobbiesSection client:visible />
   <ContactSection client:visible />

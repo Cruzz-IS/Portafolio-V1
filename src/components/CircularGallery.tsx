@@ -569,7 +569,7 @@ class App {
     const defaultItems = [
       {
         image: `https://picsum.photos/seed/1/800/600?grayscale`,
-        text: "Fútbol",
+        text: "Jugar Fútbol",
       },
       {
         image: `https://picsum.photos/seed/2/800/600?grayscale`,
@@ -593,28 +593,28 @@ class App {
       },
       {
         image: `https://picsum.photos/seed/17/800/600?grayscale`,
-        text: "Santorini",
+        text: "Aprender nuevas tecnologías",
       },
-      {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
-        text: "Blurry Lights",
-      },
-      {
-        image: `https://picsum.photos/seed/9/800/600?grayscale`,
-        text: "New York",
-      },
-      {
-        image: `https://picsum.photos/seed/10/800/600?grayscale`,
-        text: "Good Boy",
-      },
-      {
-        image: `https://picsum.photos/seed/21/800/600?grayscale`,
-        text: "Coastline",
-      },
-      {
-        image: `https://picsum.photos/seed/12/800/600?grayscale`,
-        text: "Palm Trees",
-      },
+      // {
+      //   image: `https://picsum.photos/seed/8/800/600?grayscale`,
+      //   text: "Blurry Lights",
+      // },
+      // {
+      //   image: `https://picsum.photos/seed/9/800/600?grayscale`,
+      //   text: "New York",
+      // },
+      // {
+      //   image: `https://picsum.photos/seed/10/800/600?grayscale`,
+      //   text: "Good Boy",
+      // },
+      // {
+      //   image: `https://picsum.photos/seed/21/800/600?grayscale`,
+      //   text: "Coastline",
+      // },
+      // {
+      //   image: `https://picsum.photos/seed/12/800/600?grayscale`,
+      //   text: "Palm Trees",
+      // },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
