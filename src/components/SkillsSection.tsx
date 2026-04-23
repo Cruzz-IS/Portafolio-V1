@@ -116,10 +116,10 @@ const categories: Category[] = [
     accent: "#f43f5e",
     headerGradient: "from-rose-500/20 to-rose-600/5",
     skills: [
-      { name: "Cisco / CCNA", icon: "cisco-svgrepo-com.svg" },
-      { name: "Huawei", icon: "huawei-svgrepo-com.svg" },
-      { name: "GNS3", icon: "gns3_94911.svg" },
-      { name: "Packet Tracer", icon: "icons8-cisco-packet-tracer.svg" },
+      { name: "Cisco / CCNA", icon: "/cisco-svgrepo-com.svg" },
+      { name: "Huawei", icon: "/huawei-svgrepo-com.svg" },
+      { name: "GNS3", icon: "/gns3_94911.svg" },
+      { name: "Packet Tracer", icon: "/icons8-cisco-packet-tracer.svg" },
     ],
   },
   {
@@ -138,13 +138,13 @@ const categories: Category[] = [
     accent: "#0ea5e9",
     headerGradient: "from-sky-500/20 to-sky-600/5",
     skills: [
-      { name: "Excel", icon: "microsoft-excel-2013-logo-svgrepo-com.svg" },
+      { name: "Excel", icon: "/microsoft-excel-2013-logo-svgrepo-com.svg" },
       {
         name: "PowerPoint",
-        icon: "microsoft-powerpoint-2013-logo-svgrepo-com.svg",
+        icon: "/microsoft-powerpoint-2013-logo-svgrepo-com.svg",
       },
-      { name: "Word", icon: "microsoft-word-2013-logo-logo-svgrepo-com.svg" },
-      { name: "Teams", icon: "microsoft-teams-logo-svgrepo-com.svg" },
+      { name: "Word", icon: "/microsoft-word-2013-logo-logo-svgrepo-com.svg" },
+      { name: "Teams", icon: "/microsoft-teams-logo-svgrepo-com.svg" },
     ],
   },
 ];

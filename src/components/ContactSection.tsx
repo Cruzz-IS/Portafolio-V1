@@ -1,5 +1,6 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import { Mail, MapPin } from "lucide-react";
+import { LinkPreview } from "./ui/link-preview";
 
 export default function ContactSection() {
   return (
@@ -28,7 +29,24 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <a
+          <LinkPreview
+            url="https://linkedin.com/in/edwarrcruz"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="textThree mb-1">LinkedIn</h3>
+                <p className="text-slate-400">Conecta conmigo</p>
+              </div>
+            </div>
+          </LinkPreview>
+
+          {/* <a
             href="https://linkedin.com/in/edwarrcruz"
             target="_blank"
             rel="noopener noreferrer"
@@ -45,7 +63,7 @@ export default function ContactSection() {
                 <p className="text-slate-400">Conecta conmigo</p>
               </div>
             </div>
-          </a>
+          </a> */}
 
           <a
             href="https://github.com/Cruzz-IS"
@@ -58,9 +76,7 @@ export default function ContactSection() {
                 <IconBrandGithub className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="textThree mb-1">
-                  GitHub
-                </h3>
+                <h3 className="textThree mb-1">GitHub</h3>
                 <p className="text-slate-400">Ve mis proyectos</p>
               </div>
             </div>
@@ -72,9 +88,7 @@ export default function ContactSection() {
                 <MapPin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="textThree mb-1">
-                  Ubicación
-                </h3>
+                <h3 className="textThree mb-1">Ubicación</h3>
                 <p className="text-slate-400">Tegucigalpa, Honduras</p>
               </div>
             </div>
