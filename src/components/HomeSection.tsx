@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useTranslations } from '../i18n/utils';
+import avatar1 from '../assets/img/avatar1.jpg';
 
 interface Props {
   lang?: 'es' | 'en';
@@ -470,7 +471,7 @@ export default function HomeSection({ lang = 'es' }: Props) {
               {/* Foto */}
               <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-4 dark:border-[#020818] border-slate-50 shadow-2xl z-10">
                 <img
-                  src="/avatar-placeholder.jpg"
+                  src='/src/assets/img/avatar1.svg'
                   alt="Edwar Cruz"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -531,7 +532,7 @@ export default function HomeSection({ lang = 'es' }: Props) {
               <div className="px-4 py-4 dark:bg-[#0a0f1e] bg-slate-800 font-mono text-sm leading-7 min-h-[248px]">
                 {CODE_LINES.map((line, i) => (
                   <div key={i} className="flex gap-3 group">
-                    <span className="select-none dark:text-slate-600 text-slate-500 text-xs w-4 text-right flex-shrink-0 mt-0.5 group-hover:dark:text-slate-400 group-hover:text-slate-400 transition-colors">
+                    <span className="select-none dark:text-slate-600 text-slate-500 text-xs w-4 text-right shrink-0 mt-0.5 group-hover:dark:text-slate-400 group-hover:text-slate-400 transition-colors">
                       {i + 1}
                     </span>
                     <span style={{ color: codeLines[i]?.color ?? 'transparent' }}>
