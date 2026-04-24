@@ -9,9 +9,9 @@ export default function ContactSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400 pb-12">
           Contacto
         </h2>
-        {/* <p className="text-center text-slate-400 mb-16 text-lg">
-          ¿Tienes un proyecto en mente? ¡Hablemos!
-        </p> */}
+        <p className="text-center text-slate-400 mb-16 text-lg">
+          Aqui veras mis proyectos más destacados, puedes hacer click en cada uno para ver mas detalles.
+        </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <a
@@ -65,10 +65,10 @@ export default function ContactSection() {
             </div>
           </a> */}
 
-          <a
-            href="https://github.com/Cruzz-IS"
-            target="_blank"
-            rel="noopener noreferrer"
+          <LinkPreview
+            url="https://github.com/Cruzz-IS"
+            // target="_blank"
+            // rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center gap-4">
@@ -80,7 +80,7 @@ export default function ContactSection() {
                 <p className="text-slate-400">Ve mis proyectos</p>
               </div>
             </div>
-          </a>
+          </LinkPreview>
 
           <div className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
             <div className="flex items-center gap-4">

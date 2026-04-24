@@ -107,7 +107,7 @@ const categories: Category[] = [
         icon: "https://avatars.githubusercontent.com/u/54012786?s=200&v=4",
       },
       { name: "Jest", icon: dev("jest", "plain") },
-      { name: "Playwright", icon: dev("playwright") },
+      // { name: "Playwright", icon: dev("playwright") },
       { name: "pytest", icon: dev("pytest") },
     ],
   },
@@ -217,7 +217,7 @@ function CategoryCard({
           className={`px-5 py-3 bg-linear-to-r ${category.headerGradient} border-b dark:border-white/10 border-black/10 flex items-center gap-2`}
         >
           <div
-            className="w-2 h-2 rounded-full flex-shrink-0"
+            className="w-2 h-2 rounded-full shrink-0"
             style={{ backgroundColor: category.accent }}
           />
           <h3 className="text-sm font-semibold textTwo tracking-wide">
