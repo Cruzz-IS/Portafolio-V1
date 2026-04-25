@@ -10,7 +10,8 @@ export default function ContactSection() {
           Contacto
         </h2>
         <p className="text-center text-slate-400 mb-16 text-lg">
-          Aqui veras mis proyectos más destacados, puedes hacer click en cada uno para ver mas detalles.
+          Aqui veras mis proyectos más destacados, puedes hacer click en cada
+          uno para ver mas detalles.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -29,8 +30,8 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <LinkPreview
-            url="https://linkedin.com/in/edwarrcruz"
+          <div
+            // url="https://linkedin.com/in/edwarrcruz"
             // target="_blank"
             // rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
@@ -40,11 +41,13 @@ export default function ContactSection() {
                 <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="textThree mb-1">LinkedIn</h3>
+                <LinkPreview url="https://linkedin.com/in/edwarrcruz">
+                  <h3 className="textThree mb-1">GitHub</h3>
+                </LinkPreview>
                 <p className="text-slate-400">Conecta conmigo</p>
               </div>
             </div>
-          </LinkPreview>
+          </div>
 
           {/* <a
             href="https://linkedin.com/in/edwarrcruz"
@@ -65,8 +68,8 @@ export default function ContactSection() {
             </div>
           </a> */}
 
-          <LinkPreview
-            url="https://github.com/Cruzz-IS"
+          <div
+            // url="https://github.com/Cruzz-IS"
             // target="_blank"
             // rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
@@ -76,11 +79,13 @@ export default function ContactSection() {
                 <IconBrandGithub className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <h3 className="textThree mb-1">GitHub</h3>
+                <LinkPreview url="https://github.com/Cruzz-IS">
+                  <h3 className="textThree mb-1">GitHub</h3>
+                </LinkPreview>
                 <p className="text-slate-400">Ve mis proyectos</p>
               </div>
             </div>
-          </LinkPreview>
+          </div>
 
           <div className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
             <div className="flex items-center gap-4">
