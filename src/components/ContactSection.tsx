@@ -42,7 +42,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <LinkPreview url="https://linkedin.com/in/edwarrcruz">
-                  <h3 className="textThree mb-1">GitHub</h3>
+                  <h3 className="textThree mb-1">Linkedin</h3>
                 </LinkPreview>
                 <p className="text-slate-400">Conecta conmigo</p>
               </div>
