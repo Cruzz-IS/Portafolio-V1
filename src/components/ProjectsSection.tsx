@@ -16,28 +16,28 @@ const projects = [
     title: "Campus Virtual UNAH",
     description: "Plataforma educativa completa para la gestión de cursos, estudiantes y contenido académico de la Universidad Nacional Autónoma de Honduras.",
     technologies: ["FastAPI", "Actix (Rust)", "Next.js", "PostgreSQL", "Docker"],
-    gradient: "from-blue-600 to-cyan-600",
+    linear: "from-blue-600 to-cyan-600",
     category: "Educación",
   },
   {
     title: "CityTours",
     description: "Sistema integral de gestión de viajes para taxistas, incluyendo seguimiento en tiempo real, gestión de rutas y facturación.",
     technologies: ["Node.js", "React", "MongoDB", "Socket.io", "Google Maps API"],
-    gradient: "from-green-600 to-emerald-600",
+    linear: "from-green-600 to-emerald-600",
     category: "Transporte",
   },
   {
     title: "Junker",
     description: "Marketplace de autopartes y accesorios vehiculares nuevos y usados con sistema de inventario, pagos y gestión de vendedores.",
     technologies: ["NestJS", "Next.js", "MySQL", "MongoDB", "Stripe", "AWS S3"],
-    gradient: "from-orange-600 to-red-600",
+    linear: "from-orange-600 to-red-600",
     category: "E-commerce",
   },
   {
     title: "Sistema de RRHH",
     description: "Backend robusto para gestión de recursos humanos con módulos de nómina, asistencia, evaluaciones y reportes avanzados.",
     technologies: ["Actix Web (Rust)", "PostgreSQL", "Redis", "JWT", "REST API"],
-    gradient: "from-purple-600 to-pink-600",
+    linear: "from-purple-600 to-pink-600",
     category: "Empresarial",
   },
 ];
@@ -46,7 +46,6 @@ export default function ProjectsSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
-  // Plugin de Autoplay
   const plugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: false })
   );
@@ -64,7 +63,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24 themeOne animate-scroll-fade-up bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Proyectos Destacados
         </h2>
         <p className="text-center text-slate-400 mb-16 text-lg">
@@ -83,9 +82,9 @@ export default function ProjectsSection() {
           <CarouselContent className="-ml-4">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-full lg:basis-full">
-                <div className="group/card relative rounded-2xl overflow-hidden bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 hover:border-slate-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+                <div className="group/card relative rounded-2xl overflow-hidden bg-linear-to-r from-slate-800 to-slate-900 border border-slate-700 hover:border-slate-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
                   <div
-                    className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-0 group-hover/card:opacity-10 transition-opacity duration-500`}
+                    className={`absolute inset-0 bg-linear-to-r ${project.linear} opacity-0 group-hover/card:opacity-10 transition-opacity duration-500`}
                   />
 
                   <div className="p-8 md:p-12">
@@ -103,7 +102,7 @@ export default function ProjectsSection() {
                       </div>
                     </div>
 
-                    <h3 className={`text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r ${project.gradient}`}>
+                    <h3 className={`text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r ${project.linear}`}>
                       {project.title}
                     </h3>
 
@@ -122,19 +121,17 @@ export default function ProjectsSection() {
                       ))}
                     </div>
                   </div>
-                  <div className="h-1 bg-gradient-to-r from-transparent via-slate-600 to-transparent group-hover/card:via-blue-500 transition-all duration-500" />
+                  <div className="h-1 bg-linear-to-r from-transparent via-slate-600 to-transparent group-hover/card:via-blue-500 transition-all duration-500" />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
 
-          {/* Botones de navegación (Aparecen fuera del área de contenido en desktop) */}
-          <div className="hidden md:block">
-            <CarouselPrevious className="-left-12 bg-slate-800 border-slate-700 text-white hover:bg-slate-700 hover:text-blue-400" />
-            <CarouselNext className="-right-12 bg-slate-800 border-slate-700 text-white hover:bg-slate-700 hover:text-blue-400" />
+          <div className="">
+        <CarouselPrevious className="absolute left-0  bg-transparent hover:bg-black/20 hover:text-custom-beige rounded-lg w-12 hidden md:flex" variant={"ghost"} />
+        <CarouselNext className="absolute right-0  bg-transparent hover:bg-black/20 hover:text-custom-beige rounded-lg w-12 hidden md:flex" variant={"ghost"} />
           </div>
 
-          {/* Indicadores (Dots) */}
           <div className="flex justify-center gap-2 mt-8">
             {projects.map((_, index) => (
               <button
