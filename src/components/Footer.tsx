@@ -1,4 +1,3 @@
-import { Heart } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,12 +9,6 @@ export default function Footer() {
           <p className="textOne text-center md:text-left">
             © {currentYear} Edwar Cruz. Todos los derechos reservados.
           </p>
-
-          {/* <div className="flex items-center gap-2 text-slate-400">
-            <span>Hecho con</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
-            <span>usando Astro + React</span>
-          </div> */}
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-300 dark:border-slate-800">

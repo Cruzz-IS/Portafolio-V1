@@ -1,7 +1,6 @@
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useTranslations } from '../i18n/utils';
-import avatar1 from '../assets/img/avatar1.jpg';
 
 interface Props {
   lang?: 'es' | 'en';
@@ -129,9 +128,7 @@ function MeteorShower() {
   );
 }
 
-/* ══════════════════════════════════════════
-   AURORA BLOBS
-══════════════════════════════════════════ */
+
 function Aurora() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
