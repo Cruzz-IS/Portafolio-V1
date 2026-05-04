@@ -468,7 +468,7 @@ export default function HomeSection({ lang = 'es' }: Props) {
               {/* Foto */}
               <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-4 dark:border-[#020818] border-slate-50 shadow-2xl z-10">
                 <img
-                  src='/src/assets/img/avatar1.svg'
+                  src='/img/avatar1.svg'
                   alt="Edwar Cruz"
                   className="w-full h-full object-cover"
                   onError={(e) => {
