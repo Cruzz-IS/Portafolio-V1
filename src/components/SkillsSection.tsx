@@ -143,7 +143,10 @@ const categories: Category[] = [
         name: "PowerPoint",
         icon: "/img/microsoft-powerpoint-2013-logo-svgrepo-com.svg",
       },
-      { name: "Word", icon: "/img/microsoft-word-2013-logo-logo-svgrepo-com.svg" },
+      {
+        name: "Word",
+        icon: "/img/microsoft-word-2013-logo-logo-svgrepo-com.svg",
+      },
       { name: "Teams", icon: "/img/microsoft-teams-logo-svgrepo-com.svg" },
     ],
   },
