@@ -13,57 +13,62 @@ import { IconBrandGithub } from "@tabler/icons-react";
 import { Button } from "./ui/button";
 
 const projects = [
-  {
-    title: "Plataforma de Pagos",
-    description:
-      "Plataforma educativa completa para la gestión de cursos, estudiantes y contenido académico de la Universidad Nacional Autónoma de Honduras.",
-    technologies: [
-      "FastAPI",
-      "Actix (Rust)",
-      "Next.js",
-      "PostgreSQL",
-      "Docker",
-    ],
-    linear: "from-blue-600 to-cyan-600",
-    category: "Educación",
-    github: "https://github.com/Cruzz-IS/PaymentMicroservice",
-    url: "",
-  },
+  // {
+  //   title: "Plataforma de Pagos",
+  //   description:
+  //     "Plataforma educativa completa para la gestión de cursos, estudiantes y contenido académico de la Universidad Nacional Autónoma de Honduras.",
+  //   technologies: [
+  //     "FastAPI",
+  //     "Actix (Rust)",
+  //     "Next.js",
+  //     "PostgreSQL",
+  //     "Docker",
+  //   ],
+  //   linear: "from-blue-600 to-cyan-600",
+  //   category: "Educación",
+  //   github: "https://github.com/Cruzz-IS/PaymentMicroservice",
+  //   url: "",
+  //   img: "",
+  // },
   {
     title: "CityTours",
     description:
       "Sistema integral de gestión de viajes para taxistas, incluyendo seguimiento en tiempo real, gestión de rutas y facturación.",
     technologies: [
-      "Node.js",
+      "Next.js",
       "React",
-      "MongoDB",
-      "Socket.io",
-      "Google Maps API",
+      "Supabase",
+      "Tailwind CSS",
+      "leaflet map",
+      "Typescript",
+      "Vercel",
     ],
     linear: "from-green-600 to-emerald-600",
     category: "Transporte",
     github: "https://github.com/dstconsultores/DST-CITY-TOURS",
     url: "https://dst-city-tours.vercel.app/",
+    img: "/img/city_tours.webp",
   },
   {
     title: "Junker",
     description:
       "Marketplace de autopartes y accesorios vehiculares nuevos y usados con sistema de inventario, pagos y gestión de vendedores.",
-    technologies: ["NestJS", "Next.js", "MySQL", "MongoDB", "Stripe", "AWS S3"],
+    technologies: ["NestJS", "Next.js", "Supabase", "Tailwind CSS", "Typescript", "Vercel"],
     linear: "from-orange-600 to-red-600",
     category: "E-commerce",
     github: "https://github.com/Clarozzz/junker-frontend",
     url: "https://junker.vercel.app/",
+    img: "/img/junker.webp",
   },
   {
     title: "Sistema de RRHH",
     description:
-      "Backend robusto para gestión de recursos humanos con módulos de nómina, asistencia, evaluaciones y reportes avanzados.",
+      "SIstema para la gestión de recursos humanos con módulos de nómina, asistencia, evaluaciones y reportes avanzados.",
     technologies: [
       "ASP.NET Core",
-      "PostgreSQL",
-      "Redis",
-      "JWT",
+      "MS SQL Server",
+      "React",
+      "Vite",
       "REST API",
       "Swagger",
       "C#",
@@ -72,6 +77,7 @@ const projects = [
     category: "Empresarial",
     github: "https://github.com/Cruzz-IS/React_RRHH",
     url: "",
+    img: "img/rrhh.webp",
   },
 ];
 
@@ -121,19 +127,27 @@ export default function ProjectsSection() {
                     className={`absolute inset-0 bg-linear-to-r ${project.linear} opacity-0 group-hover/card:opacity-10 transition-opacity duration-500`}
                   />
 
-                  <div className="p-8 md:p-12">
+                  <div className="p-8 md:p-12 md:min-h-[500px]">
                     <div className="flex items-start justify-between mb-6">
                       <span className="px-4 py-2 rounded-full bg-slate-700/50 text-slate-300 text-sm font-medium">
                         {project.category}
                       </span>
                       <div className="flex gap-3 relative z-10">
                         <Button className="p-2 rounded-lg bg-slate-700/50 hover:bg-slate-600 transition-colors cursor-pointer">
-                          <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <IconBrandGithub className="w-5 h-5 text-slate-300" />
                           </a>
                         </Button>
                         <Button className="p-2 rounded-lg bg-slate-700/50 hover:bg-slate-600 transition-colors cursor-pointer">
-                          <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="w-5 h-5 text-slate-300" />
                           </a>
                         </Button>
@@ -149,6 +163,16 @@ export default function ProjectsSection() {
                     <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                       {project.description}
                     </p>
+                    <div className="pb-4">
+                      <img
+                        src={project.img}
+                        alt={project.title}
+                        width={1280}
+                        height={500}
+                        loading="lazy"
+                        className=" object-cover rounded-4xl border "
+                      />
+                    </div>
 
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (

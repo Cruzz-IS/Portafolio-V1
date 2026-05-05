@@ -20,7 +20,7 @@ export default function HobbiesSection() {
   }, []);
 
   const textColor = isDark ? "#ffffff" : "#000000";
-  const bgColor = isDark ? "#020618" : "#ffffff"; 
+  const bgColor = isDark ? "#020618" : "#ffffff";
 
   return (
     <section
@@ -32,8 +32,17 @@ export default function HobbiesSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-2 bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-cyan-400">
           Hobbies
         </h2>
+        <p className="text-center text-slate-400 text-lg">
+          Mis pasatiempos favoritos
+        </p>
 
-        <div style={{ height: "600px", position: "relative", backgroundColor: bgColor }}>
+        <div
+          style={{
+            height: "600px",
+            position: "relative",
+            backgroundColor: bgColor,
+          }}
+        >
           <CircularGallery
             bend={3}
             borderRadius={0.05}
