@@ -568,31 +568,31 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
+        image: `/img/futbol.webp`,
         text: "Jugar Fútbol",
       },
       {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
+        image: `/img/movies.webp`,
         text: "Ver Películas",
       },
       {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
+        image: `/img/videogames.webp`,
         text: "Jugar Videojuegos",
       },
       {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
+        image: `/img/familia.webp`,
         text: "Pasar tiempo en familia",
       },
       {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
+        image: `/img/viajar.webp`,
         text: "Viajar",
       },
       {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
+        image: `/img/leer_libros.webp`,
         text: "Leer libros",
       },
       {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
+        image: `/img/tecnologias.webp`,
         text: "Aprender nuevas tecnologías",
       },
       // {

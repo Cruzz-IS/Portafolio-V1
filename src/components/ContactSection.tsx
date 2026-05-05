@@ -41,7 +41,12 @@ export default function ContactSection() {
                 <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <LinkPreview url="https://linkedin.com/in/edwarrcruz">
+                <LinkPreview
+                  url="https://linkedin.com/in/edwarrcruz/"
+                  imageSrc="/img/linkedin.webp"
+                  isStatic
+                  className="font-bold"
+                >
                   <h3 className="textThree mb-1">Linkedin</h3>
                 </LinkPreview>
                 <p className="text-slate-400">Conecta conmigo</p>
