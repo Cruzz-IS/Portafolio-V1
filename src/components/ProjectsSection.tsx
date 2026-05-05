@@ -77,7 +77,7 @@ const projects = [
     category: "Empresarial",
     github: "https://github.com/Cruzz-IS/React_RRHH",
     url: "",
-    img: "img/rrhh.webp",
+    img: "/img/rrhh.webp",
   },
 ];
 
