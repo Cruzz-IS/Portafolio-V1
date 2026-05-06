@@ -17,37 +17,34 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <a
             href="mailto:edwarcruz2000@gmail.com"
-            className="group p-8 rounded-xl overflow-hidden h-full bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+            className="group p-8 rounded-xl h-full bg-linear-to-br cardBg border border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 relative z-10"
           >
             <div className="flex items-center gap-4 text-sm md:text-md">
-              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+              <div className="shrink-0 p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <Mail className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
-              <div>
-                <h3 className="textThree mb-1">Email</h3>
-                <p className="text-slate-400 overflow-hidden h:full">edwarcruz2000@gmail.com</p>
+              <div className="min-w-0">
+                <h3 className="textThree mb-1 truncate">Email</h3>
+                <p className="text-slate-400 overflow-hidden w-48 truncate h:full ">
+                  edwarcruz2000@gmail.com
+                </p>
               </div>
             </div>
           </a>
 
-          <div
-            // url="https://linkedin.com/in/edwarrcruz"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            className="group p-8 rounded-xl overflow-hidden h-full bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
-          >
+          <div className="group p-8 rounded-xl h-full bg-linear-to-br cardBg border border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 relative z-10">
             <div className="flex items-center gap-4 text-sm md:text-md">
-              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+              <div className="shrink-0 p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <IconBrandLinkedin className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <LinkPreview
                   url="https://linkedin.com/in/edwarrcruz/"
                   imageSrc="/img/linkedin.webp"
                   isStatic
-                  className="font-bold"
+                  className="font-bold block z-20"
                 >
-                  <h3 className="textThree mb-1">Linkedin</h3>
+                  <h3 className="textThree mb-1 truncate">Linkedin</h3>
                 </LinkPreview>
                 <p className="text-slate-400">Conecta conmigo</p>
               </div>
@@ -77,28 +74,31 @@ export default function ContactSection() {
             // url="https://github.com/Cruzz-IS"
             // target="_blank"
             // rel="noopener noreferrer"
-            className="group overflow-hidden h-full p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
+            className="group p-8 rounded-xl h-full bg-linear-to-br cardBg border border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 relative z-10"
           >
             <div className="flex items-center gap-4 text-sm md:text-md">
-              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+              <div className="shrink-0 p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <IconBrandGithub className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
-              <div>
-                <LinkPreview url="https://github.com/Cruzz-IS">
-                  <h3 className="textThree mb-1">GitHub</h3>
+              <div className="min-w-0">
+                <LinkPreview
+                  url="https://github.com/Cruzz-IS"
+                  className="font-bold block z-20"
+                >
+                  <h3 className="textThree mb-1 truncate">GitHub</h3>
                 </LinkPreview>
                 <p className="text-slate-400">Ve mis proyectos</p>
               </div>
             </div>
           </div>
 
-          <div className="group overflow-hidden h-full p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
+          <div className="group p-8 rounded-xl h-full bg-linear-to-br cardBg border border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 relative z-10">
             <div className="flex items-center gap-4 text-sm md:text-md">
-              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+              <div className="shrink-0 p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <MapPin className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
-              <div>
-                <h3 className="textThree mb-1">Ubicación</h3>
+              <div className="min-w-0">
+                <h3 className="textThree mb-1 truncate">Ubicación</h3>
                 <p className="text-slate-400">Tegucigalpa, Honduras</p>
               </div>
             </div>
