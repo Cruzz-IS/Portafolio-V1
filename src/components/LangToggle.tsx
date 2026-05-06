@@ -21,8 +21,8 @@ export default function LangToggle({ lang, currentPath }: Props) {
                  hover:bg-slate-100 dark:hover:bg-slate-800
                  transition-colors"
     >
-      <span>{otherLang === "en" ? "🇺🇸" : "🇭🇳"}</span>
-      <span>{languages[otherLang]}</span>
+      <span>{otherLang === "en" ? "EN" : "ES"}</span>
+      <span className="hidden sm:block">{languages[otherLang]}</span>
     </a>
   );
 }

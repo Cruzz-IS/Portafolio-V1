@@ -19,9 +19,9 @@ export default function ContactSection() {
             href="mailto:edwarcruz2000@gmail.com"
             className="group w-72 md:w-full p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
-            <div className="flex items-center gap-4 overflow-hidden truncate">
-              <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                <Mail className="w-8 h-8 text-blue-400" />
+            <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <Mail className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
               <div>
                 <h3 className="textThree mb-1">Email</h3>
@@ -36,9 +36,9 @@ export default function ContactSection() {
             // rel="noopener noreferrer"
             className="group p-8 rounded-xl  w-72 md:w-full bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
-            <div className="flex items-center gap-4">
-              <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
+            <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <IconBrandLinkedin className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
               <div>
                 <LinkPreview
@@ -60,7 +60,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="group p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 text-sm md:text-md">
               <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                 <IconBrandLinkedin className="w-8 h-8 text-blue-400" />
               </div>
@@ -79,9 +79,9 @@ export default function ContactSection() {
             // rel="noopener noreferrer"
             className="group w-72 md:w-full p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
           >
-            <div className="flex items-center gap-4">
-              <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                <IconBrandGithub className="w-8 h-8 text-blue-400" />
+            <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <IconBrandGithub className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
               <div>
                 <LinkPreview url="https://github.com/Cruzz-IS">
@@ -93,9 +93,9 @@ export default function ContactSection() {
           </div>
 
           <div className="group w-72 md:w-full p-8 rounded-xl bg-linear-to-br cardBg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
-            <div className="flex items-center gap-4">
-              <div className="p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
-                <MapPin className="w-8 h-8 text-blue-400" />
+            <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="p-3 md:p-4 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <MapPin className="w-4 h-4 md:w-8 md:h-8 text-blue-400" />
               </div>
               <div>
                 <h3 className="textThree mb-1">Ubicación</h3>
